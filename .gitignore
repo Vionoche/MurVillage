@@ -1,1 +1,7 @@
 ﻿/.idea
+.vs/
+
+# Build results
+[Dd]ebug/
+[Bb]in/
+[Oo]bj/
