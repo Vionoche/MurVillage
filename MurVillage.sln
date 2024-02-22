@@ -1,8 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B2A104AA-D7F2-44AA-89D8-7F43031B4777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentBlocks.Site.Server", "src\ContentBlocks\ContentBlocks.Site.Server\ContentBlocks.Site.Server.csproj", "{1D9018F7-315F-4B91-A59F-B3EF72E9ABC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentBlocks.Site.Client", "src\ContentBlocks\ContentBlocks.Site.Client\ContentBlocks.Site.Client.csproj", "{9F69077C-E353-4742-B2D1-BE341FBEE20A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D9018F7-315F-4B91-A59F-B3EF72E9ABC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9018F7-315F-4B91-A59F-B3EF72E9ABC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9018F7-315F-4B91-A59F-B3EF72E9ABC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9018F7-315F-4B91-A59F-B3EF72E9ABC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F69077C-E353-4742-B2D1-BE341FBEE20A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F69077C-E353-4742-B2D1-BE341FBEE20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F69077C-E353-4742-B2D1-BE341FBEE20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F69077C-E353-4742-B2D1-BE341FBEE20A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D9018F7-315F-4B91-A59F-B3EF72E9ABC3} = {B2A104AA-D7F2-44AA-89D8-7F43031B4777}
+		{9F69077C-E353-4742-B2D1-BE341FBEE20A} = {B2A104AA-D7F2-44AA-89D8-7F43031B4777}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D88BD09B-CAB6-4492-87A1-DFFD818C7F10}
 	EndGlobalSection
 EndGlobal
