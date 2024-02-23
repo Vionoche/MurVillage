@@ -1,6 +1,10 @@
 ﻿@page "/weather"
 @attribute [StreamRendering]
 
+@using ContentBlocks.Site.Server.Components.PageLayouts
+
+@layout CommonPageLayout
+
 <PageTitle>Weather</PageTitle>
 
 <h1>Weather</h1>
@@ -42,7 +46,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         // Simulate asynchronous loading to demonstrate streaming rendering
-        await Task.Delay(500);
+        await Task.Delay(1);
 
         var startDate = DateOnly.FromDateTime(DateTime.Now);
         var summaries = new[] { "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching" };
