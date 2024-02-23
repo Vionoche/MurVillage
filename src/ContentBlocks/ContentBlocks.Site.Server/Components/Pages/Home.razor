@@ -1,6 +1,7 @@
 ﻿@page "/"
 
 @using ContentBlocks.Site.Server.Components.PageLayouts
+@using ContentBlocks.Site.Server.Models
 
 @layout StartPageLayout
 
@@ -9,3 +10,29 @@
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
+
+@foreach (var block in _pageModel.Blocks)
+{
+    <DynamicComponent Type="@block.ComponentType" Parameters="@block.Parameters" />
+}
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        _pageModel = new PageModel
+        {
+            Blocks =
+            [
+                BlockModelFactory.CreateHeaderBlock(),
+                BlockModelFactory.CreateTeaserBlock("Teaser 1", "First Teaser"),
+                BlockModelFactory.CreateBannerBlockModel("favicon.png", "info"),
+                BlockModelFactory.CreateTeaserBlock("Teaser 2", "Last Teaser"),
+                BlockModelFactory.CreateFooterBlockModel()
+            ]
+        };
+    }
+
+    private PageModel _pageModel = null!;
+
+}

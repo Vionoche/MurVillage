@@ -1,5 +1,13 @@
-﻿<h3>BannerBlock</h3>
+﻿<a href="@AdvertisementUrl" target="_blank">
+    <img src="@ImageUrl" alt="" />
+</a>
 
 @code {
-    
+
+    [Parameter]
+    public string ImageUrl { get; set; } = null!;
+
+    [Parameter]
+    public string AdvertisementUrl { get; set; } = null!;
+
 }
